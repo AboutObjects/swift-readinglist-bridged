@@ -1,3 +1,8 @@
+//
+// Copyright (C) 2014 About Objects, Inc. All Rights Reserved.
+// See LICENSE.txt for this example's licensing information.
+//
+
 import UIKit
 
 class ViewBookController : UITableViewController
@@ -8,6 +13,12 @@ class ViewBookController : UITableViewController
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var authorImageView: UIImageView!
+    
+    override func viewDidLoad() {
+        authorImageView.layer.cornerRadius = 5.0
+        authorImageView.layer.masksToBounds = true
+    }
     
     override func viewWillAppear(animated: Bool)
     {
@@ -17,6 +28,8 @@ class ViewBookController : UITableViewController
         yearLabel.text = book.year
         firstNameLabel.text = book.author.firstName
         lastNameLabel.text = book.author.lastName
+        authorImageView.image = UIImage.imageNamed(book.author.lastName,
+            inBundle:NSBundle(forClass:Book.self))
         
         title = titleLabel.text
     }

@@ -1,3 +1,8 @@
+//
+// Copyright (C) 2014 About Objects, Inc. All Rights Reserved.
+// See LICENSE.txt for this example's licensing information.
+//
+
 import UIKit
 import ReadingListModel
 
@@ -56,41 +61,71 @@ class ReadingListController : UITableViewController
         super.viewDidLoad()
         
         var newReadingList = objectStore.readingList()
+        books = (newReadingList.books as NSArray).mutableCopy() as NSMutableArray
+        
         title = newReadingList.title
-        self.books = (newReadingList.books as NSArray).mutableCopy() as NSMutableArray
+        navigationItem.leftBarButtonItem = editButtonItem()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
         switch (segue.identifier as NSString) {
         case "ViewBook":
-                let controller = segue.destinationViewController as ViewBookController
-                controller.book  = books[tableView.indexPathForSelectedRow()!.row] as Book
+            let controller = segue.destinationViewController as ViewBookController
+            controller.book  = books[tableView.indexPathForSelectedRow()!.row] as Book
         case "AddBook":
             let navController = segue.destinationViewController as UINavigationController
             let controller = navController.childViewControllers.first as AddBookController
-//            controller.completion = { book in self.insertBook(book, index:0) }
+            controller.completion = { book in self.insertBook(book, index:0) }
         default:
             println("Unmatched segue identifier \(segue.identifier)")
         }
     }
     
     
-    // MARK: - UITableViewDataSource
+    // MARK: - UITableViewDelegate
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    override func tableView(
+        tableView: UITableView,
+        willDisplayCell cell: UITableViewCell,
+        forRowAtIndexPath indexPath: NSIndexPath)
     {
-        return 100;
+        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor.oddRowColor() : UIColor.evenRowColor()
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    
+    // MARK: - UITableViewDataSource
+    
+    override func tableView(
+        tableView: UITableView,
+        commitEditingStyle editingStyle: UITableViewCellEditingStyle,
+        forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        if editingStyle == .Delete {
+            books.removeObjectAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation:.Automatic)
+            save()
+        }
+    }
+    
+    override func tableView(
+        tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int
+    {
+        return books.count;
+    }
+    
+    override func tableView(
+        tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("BookSummary") as UITableViewCell;
-        
         let book: Book = books[indexPath.row] as Book
         
         cell.textLabel!.text = book.title
         cell.detailTextLabel!.text = book.year + "  " + book.author.fullName
+        cell.imageView!.image = UIImage.imageNamed(book.author.lastName,
+            inBundle:NSBundle(forClass: Book.self))
         
         return cell;
     }

@@ -1,6 +1,6 @@
 # Swift ReadingList (Bridged to Objective-C Model Classes)
 
-
+Current version built with Xcode 6 Beta 7.
 
 ---
 

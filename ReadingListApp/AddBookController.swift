@@ -8,12 +8,25 @@ import UIKit
 class AddBookController : UITableViewController
 {
     var book: Book!
-//    var completion: ((book: Book) -> Void) = { book in println("No completion block provided.") }
+    var completion: ((book: Book) -> Void)?
     
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var yearField: UITextField!
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
+
+    var bookToAdd: Book {
+        get {
+            return Book(dictionary: NSDictionary(dictionary:
+                ["title": titleField.text, "year": yearField.text,
+                    "author":[
+                        "firstName": firstNameField.text,
+                        "lastName": lastNameField.text]]))
+        }
+    }
+    
+    
+    // MARK: - UIViewController
     
     override func viewWillAppear(animated: Bool)
     {
@@ -22,19 +35,12 @@ class AddBookController : UITableViewController
         titleField.becomeFirstResponder()
     }
     
-     var bookToAdd: Book {
-        get { return Book(dictionary: NSDictionary(dictionary:
-            ["title": titleField.text, "year": yearField.text,
-            "author":[
-                "firstName": firstNameField.text,
-                "lastName": lastNameField.text]]))
-        }
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
         if ((segue.identifier as NSString).isEqualToString("DoneAddingBook")) {
-//            completion(book: bookToAdd)
+            if completion != nil {
+                completion!(book: bookToAdd)
+            }
         }
     }
 }

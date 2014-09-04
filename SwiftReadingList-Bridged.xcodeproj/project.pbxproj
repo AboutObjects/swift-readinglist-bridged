@@ -35,7 +35,25 @@
 		AB54F4B619B684450082E7D4 /* ReadingListObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54F46819B67B210082E7D4 /* ReadingListObjectStore.swift */; };
 		AB54F4B719B684460082E7D4 /* ReadingListObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54F46819B67B210082E7D4 /* ReadingListObjectStore.swift */; };
 		AB54F4BA19B68D440082E7D4 /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54F4B919B68D440082E7D4 /* AddBookController.swift */; };
-		ABF4616B19B7C136001E6720 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = ABF4616A19B7C136001E6720 /* README.md */; };
+		ABF4616D19B7CCB0001E6720 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4616C19B7CCB0001E6720 /* Extensions.swift */; };
+		ABF4616F19B7CD6C001E6720 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = ABF4616E19B7CD6C001E6720 /* LICENSE.txt */; };
+		ABF4618219B7D4EB001E6720 /* Austen.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617119B7D4EB001E6720 /* Austen.png */; };
+		ABF4618319B7D4EB001E6720 /* Bacon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617219B7D4EB001E6720 /* Bacon.png */; };
+		ABF4618419B7D4EB001E6720 /* Carroll.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617319B7D4EB001E6720 /* Carroll.png */; };
+		ABF4618519B7D4EB001E6720 /* Dostoevsky.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617419B7D4EB001E6720 /* Dostoevsky.png */; };
+		ABF4618619B7D4EB001E6720 /* Eliot.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617519B7D4EB001E6720 /* Eliot.png */; };
+		ABF4618719B7D4EB001E6720 /* Emerson.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617619B7D4EB001E6720 /* Emerson.png */; };
+		ABF4618819B7D4EB001E6720 /* Hemingway.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617719B7D4EB001E6720 /* Hemingway.png */; };
+		ABF4618919B7D4EB001E6720 /* Milne.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617819B7D4EB001E6720 /* Milne.png */; };
+		ABF4618A19B7D4EB001E6720 /* More.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617919B7D4EB001E6720 /* More.png */; };
+		ABF4618B19B7D4EB001E6720 /* Newton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617A19B7D4EB001E6720 /* Newton.png */; };
+		ABF4618C19B7D4EB001E6720 /* NoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617B19B7D4EB001E6720 /* NoImage.png */; };
+		ABF4618D19B7D4EB001E6720 /* Shakespeare.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617C19B7D4EB001E6720 /* Shakespeare.png */; };
+		ABF4618E19B7D4EB001E6720 /* Thoreau.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617D19B7D4EB001E6720 /* Thoreau.jpg */; };
+		ABF4618F19B7D4EB001E6720 /* Tolstoy.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617E19B7D4EB001E6720 /* Tolstoy.png */; };
+		ABF4619019B7D4EB001E6720 /* Twain.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617F19B7D4EB001E6720 /* Twain.png */; };
+		ABF4619119B7D4EB001E6720 /* Wells.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4618019B7D4EB001E6720 /* Wells.png */; };
+		ABF4619219B7D4EB001E6720 /* Whitman.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4618119B7D4EB001E6720 /* Whitman.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +133,25 @@
 		AB54F4A819B67D650082E7D4 /* ReadingListApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReadingListApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB54F4B919B68D440082E7D4 /* AddBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
 		ABF4616A19B7C136001E6720 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ABF4616C19B7CCB0001E6720 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ABF4616E19B7CD6C001E6720 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		ABF4617119B7D4EB001E6720 /* Austen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Austen.png; sourceTree = "<group>"; };
+		ABF4617219B7D4EB001E6720 /* Bacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bacon.png; sourceTree = "<group>"; };
+		ABF4617319B7D4EB001E6720 /* Carroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carroll.png; sourceTree = "<group>"; };
+		ABF4617419B7D4EB001E6720 /* Dostoevsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dostoevsky.png; sourceTree = "<group>"; };
+		ABF4617519B7D4EB001E6720 /* Eliot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eliot.png; sourceTree = "<group>"; };
+		ABF4617619B7D4EB001E6720 /* Emerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emerson.png; sourceTree = "<group>"; };
+		ABF4617719B7D4EB001E6720 /* Hemingway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hemingway.png; sourceTree = "<group>"; };
+		ABF4617819B7D4EB001E6720 /* Milne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milne.png; sourceTree = "<group>"; };
+		ABF4617919B7D4EB001E6720 /* More.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = More.png; sourceTree = "<group>"; };
+		ABF4617A19B7D4EB001E6720 /* Newton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Newton.png; sourceTree = "<group>"; };
+		ABF4617B19B7D4EB001E6720 /* NoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoImage.png; sourceTree = "<group>"; };
+		ABF4617C19B7D4EB001E6720 /* Shakespeare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shakespeare.png; sourceTree = "<group>"; };
+		ABF4617D19B7D4EB001E6720 /* Thoreau.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thoreau.jpg; sourceTree = "<group>"; };
+		ABF4617E19B7D4EB001E6720 /* Tolstoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tolstoy.png; sourceTree = "<group>"; };
+		ABF4617F19B7D4EB001E6720 /* Twain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twain.png; sourceTree = "<group>"; };
+		ABF4618019B7D4EB001E6720 /* Wells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wells.png; sourceTree = "<group>"; };
+		ABF4618119B7D4EB001E6720 /* Whitman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Whitman.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				ABF4616A19B7C136001E6720 /* README.md */,
+				ABF4616E19B7CD6C001E6720 /* LICENSE.txt */,
 				AB54F47619B67C0F0082E7D4 /* ReadingListModel */,
 				AB54F48219B67C0F0082E7D4 /* ReadingListModelTests */,
 				AB54F44519B67ADC0082E7D4 /* ReadingListApp */,
@@ -178,6 +216,7 @@
 			children = (
 				AB54F4A819B67D650082E7D4 /* ReadingListApp-Bridging-Header.h */,
 				AB54F46419B67B210082E7D4 /* AppDelegate.swift */,
+				ABF4616C19B7CCB0001E6720 /* Extensions.swift */,
 				AB54F46519B67B210082E7D4 /* ReadingListController.swift */,
 				AB54F46619B67B210082E7D4 /* ViewBookController.swift */,
 				AB54F4B919B68D440082E7D4 /* AddBookController.swift */,
@@ -217,6 +256,7 @@
 		AB54F47619B67C0F0082E7D4 /* ReadingListModel */ = {
 			isa = PBXGroup;
 			children = (
+				ABF4617019B7D4EB001E6720 /* Images */,
 				AB54F49819B67C380082E7D4 /* BooksAndAuthors.plist */,
 				AB54F47919B67C0F0082E7D4 /* ReadingListModel.h */,
 				AB54F49919B67C380082E7D4 /* ModelObject.h */,
@@ -257,6 +297,30 @@
 				AB54F48419B67C0F0082E7D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABF4617019B7D4EB001E6720 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ABF4617119B7D4EB001E6720 /* Austen.png */,
+				ABF4617219B7D4EB001E6720 /* Bacon.png */,
+				ABF4617319B7D4EB001E6720 /* Carroll.png */,
+				ABF4617419B7D4EB001E6720 /* Dostoevsky.png */,
+				ABF4617519B7D4EB001E6720 /* Eliot.png */,
+				ABF4617619B7D4EB001E6720 /* Emerson.png */,
+				ABF4617719B7D4EB001E6720 /* Hemingway.png */,
+				ABF4617819B7D4EB001E6720 /* Milne.png */,
+				ABF4617919B7D4EB001E6720 /* More.png */,
+				ABF4617A19B7D4EB001E6720 /* Newton.png */,
+				ABF4617B19B7D4EB001E6720 /* NoImage.png */,
+				ABF4617C19B7D4EB001E6720 /* Shakespeare.png */,
+				ABF4617D19B7D4EB001E6720 /* Thoreau.jpg */,
+				ABF4617E19B7D4EB001E6720 /* Tolstoy.png */,
+				ABF4617F19B7D4EB001E6720 /* Twain.png */,
+				ABF4618019B7D4EB001E6720 /* Wells.png */,
+				ABF4618119B7D4EB001E6720 /* Whitman.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF4616F19B7CD6C001E6720 /* LICENSE.txt in Resources */,
 				AB02D2E619B768C30074306E /* BooksAndAuthors.plist in Resources */,
 				AB54F46F19B67B210082E7D4 /* Main.storyboard in Resources */,
 				AB54F45019B67ADC0082E7D4 /* Images.xcassets in Resources */,
@@ -427,7 +492,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF4618919B7D4EB001E6720 /* Milne.png in Resources */,
+				ABF4618B19B7D4EB001E6720 /* Newton.png in Resources */,
+				ABF4619219B7D4EB001E6720 /* Whitman.png in Resources */,
 				AB54F4A219B67C380082E7D4 /* BooksAndAuthors.plist in Resources */,
+				ABF4618A19B7D4EB001E6720 /* More.png in Resources */,
+				ABF4618F19B7D4EB001E6720 /* Tolstoy.png in Resources */,
+				ABF4618E19B7D4EB001E6720 /* Thoreau.jpg in Resources */,
+				ABF4618819B7D4EB001E6720 /* Hemingway.png in Resources */,
+				ABF4618419B7D4EB001E6720 /* Carroll.png in Resources */,
+				ABF4618319B7D4EB001E6720 /* Bacon.png in Resources */,
+				ABF4618719B7D4EB001E6720 /* Emerson.png in Resources */,
+				ABF4618619B7D4EB001E6720 /* Eliot.png in Resources */,
+				ABF4618519B7D4EB001E6720 /* Dostoevsky.png in Resources */,
+				ABF4618C19B7D4EB001E6720 /* NoImage.png in Resources */,
+				ABF4618219B7D4EB001E6720 /* Austen.png in Resources */,
+				ABF4618D19B7D4EB001E6720 /* Shakespeare.png in Resources */,
+				ABF4619019B7D4EB001E6720 /* Twain.png in Resources */,
+				ABF4619119B7D4EB001E6720 /* Wells.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,8 +532,8 @@
 				AB54F4BA19B68D440082E7D4 /* AddBookController.swift in Sources */,
 				AB54F46D19B67B210082E7D4 /* EditBookController.swift in Sources */,
 				AB54F46C19B67B210082E7D4 /* ViewBookController.swift in Sources */,
-				ABF4616B19B7C136001E6720 /* README.md in Sources */,
 				AB54F46B19B67B210082E7D4 /* ReadingListController.swift in Sources */,
+				ABF4616D19B7CCB0001E6720 /* Extensions.swift in Sources */,
 				AB54F46A19B67B210082E7D4 /* AppDelegate.swift in Sources */,
 				AB54F4B619B684450082E7D4 /* ReadingListObjectStore.swift in Sources */,
 			);
