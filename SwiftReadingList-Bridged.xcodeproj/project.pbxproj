@@ -35,6 +35,9 @@
 		AB54F4B619B684450082E7D4 /* ReadingListObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54F46819B67B210082E7D4 /* ReadingListObjectStore.swift */; };
 		AB54F4B719B684460082E7D4 /* ReadingListObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54F46819B67B210082E7D4 /* ReadingListObjectStore.swift */; };
 		AB54F4BA19B68D440082E7D4 /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54F4B919B68D440082E7D4 /* AddBookController.swift */; };
+		ABF048CC19BBC92E00F76031 /* screenshot-edit.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ABF048C919BBC92E00F76031 /* screenshot-edit.tiff */; };
+		ABF048CD19BBC92E00F76031 /* screenshot-list.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ABF048CA19BBC92E00F76031 /* screenshot-list.tiff */; };
+		ABF048CE19BBC92E00F76031 /* screenshot-view.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ABF048CB19BBC92E00F76031 /* screenshot-view.tiff */; };
 		ABF4616D19B7CCB0001E6720 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4616C19B7CCB0001E6720 /* Extensions.swift */; };
 		ABF4616F19B7CD6C001E6720 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = ABF4616E19B7CD6C001E6720 /* LICENSE.txt */; };
 		ABF4618219B7D4EB001E6720 /* Austen.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF4617119B7D4EB001E6720 /* Austen.png */; };
@@ -132,6 +135,9 @@
 		AB54F49C19B67C380082E7D4 /* ReadingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingList.m; sourceTree = "<group>"; };
 		AB54F4A819B67D650082E7D4 /* ReadingListApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReadingListApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB54F4B919B68D440082E7D4 /* AddBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
+		ABF048C919BBC92E00F76031 /* screenshot-edit.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "screenshot-edit.tiff"; sourceTree = "<group>"; };
+		ABF048CA19BBC92E00F76031 /* screenshot-list.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "screenshot-list.tiff"; sourceTree = "<group>"; };
+		ABF048CB19BBC92E00F76031 /* screenshot-view.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "screenshot-view.tiff"; sourceTree = "<group>"; };
 		ABF4616A19B7C136001E6720 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ABF4616C19B7CCB0001E6720 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ABF4616E19B7CD6C001E6720 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 		AB54F3EA19B679FD0082E7D4 = {
 			isa = PBXGroup;
 			children = (
+				ABF048C819BBC92E00F76031 /* images */,
 				ABF4616A19B7C136001E6720 /* README.md */,
 				ABF4616E19B7CD6C001E6720 /* LICENSE.txt */,
 				AB54F47619B67C0F0082E7D4 /* ReadingListModel */,
@@ -297,6 +304,16 @@
 				AB54F48419B67C0F0082E7D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABF048C819BBC92E00F76031 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ABF048C919BBC92E00F76031 /* screenshot-edit.tiff */,
+				ABF048CA19BBC92E00F76031 /* screenshot-list.tiff */,
+				ABF048CB19BBC92E00F76031 /* screenshot-view.tiff */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		ABF4617019B7D4EB001E6720 /* Images */ = {
@@ -495,6 +512,7 @@
 				ABF4618919B7D4EB001E6720 /* Milne.png in Resources */,
 				ABF4618B19B7D4EB001E6720 /* Newton.png in Resources */,
 				ABF4619219B7D4EB001E6720 /* Whitman.png in Resources */,
+				ABF048CC19BBC92E00F76031 /* screenshot-edit.tiff in Resources */,
 				AB54F4A219B67C380082E7D4 /* BooksAndAuthors.plist in Resources */,
 				ABF4618A19B7D4EB001E6720 /* More.png in Resources */,
 				ABF4618F19B7D4EB001E6720 /* Tolstoy.png in Resources */,
@@ -505,10 +523,12 @@
 				ABF4618719B7D4EB001E6720 /* Emerson.png in Resources */,
 				ABF4618619B7D4EB001E6720 /* Eliot.png in Resources */,
 				ABF4618519B7D4EB001E6720 /* Dostoevsky.png in Resources */,
+				ABF048CE19BBC92E00F76031 /* screenshot-view.tiff in Resources */,
 				ABF4618C19B7D4EB001E6720 /* NoImage.png in Resources */,
 				ABF4618219B7D4EB001E6720 /* Austen.png in Resources */,
 				ABF4618D19B7D4EB001E6720 /* Shakespeare.png in Resources */,
 				ABF4619019B7D4EB001E6720 /* Twain.png in Resources */,
+				ABF048CD19BBC92E00F76031 /* screenshot-list.tiff in Resources */,
 				ABF4619119B7D4EB001E6720 /* Wells.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

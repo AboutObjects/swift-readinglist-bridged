@@ -37,7 +37,7 @@ class AddBookController : UITableViewController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
         if segue.identifier == "DoneAddingBook" {
-            completion?(book: bookToAdd)
+            completion? (book: bookToAdd)
         }
     }
 }

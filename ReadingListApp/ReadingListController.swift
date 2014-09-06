@@ -85,7 +85,9 @@ class ReadingListController : UITableViewController
         willDisplayCell cell: UITableViewCell,
         forRowAtIndexPath indexPath: NSIndexPath)
     {
-        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor.oddRowColor() : UIColor.evenRowColor()
+        cell.backgroundColor = indexPath.row % 2 == 0 ? UIColor.evenRowColor() : UIColor.oddRowColor()
+        cell.imageView?.layer.cornerRadius = 22.0
+        cell.imageView?.layer.masksToBounds = true
     }
     
     
@@ -98,9 +100,21 @@ class ReadingListController : UITableViewController
     {
         if editingStyle == .Delete {
             books.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation:.Automatic)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             save()
         }
+    }
+    
+    override func tableView(tableView: UITableView,
+        moveRowAtIndexPath sourceIndexPath: NSIndexPath,
+        toIndexPath destinationIndexPath: NSIndexPath)
+    {
+        let book = books[sourceIndexPath.row]
+        books.removeAtIndex(sourceIndexPath.row)
+        books.insert(book, atIndex: destinationIndexPath.row)
+        tableView.moveRowAtIndexPath(sourceIndexPath, toIndexPath: destinationIndexPath)
+        tableView.reloadData() // Update odd row highlighting
+        save()
     }
     
     override func tableView(
@@ -117,9 +131,9 @@ class ReadingListController : UITableViewController
         let cell = tableView.dequeueReusableCellWithIdentifier("BookSummary") as UITableViewCell;
         let book: Book = books[indexPath.row] as Book
         
-        cell.textLabel!.text = book.title
-        cell.detailTextLabel!.text = book.year + "  " + book.author.fullName
-        cell.imageView!.image = UIImage.imageNamed(book.author.lastName, inBundleForClass:Book.self)
+        cell.textLabel?.text = book.title
+        cell.detailTextLabel?.text = book.year + "  " + book.author.fullName
+        cell.imageView?.image = UIImage.imageNamed(book.author.lastName, inBundleForClass:Book.self)
         
         return cell
     }
