@@ -24,6 +24,6 @@ extension UIImage
     {
         let bundle = NSBundle(forClass: bundleClass.self)
         let image: UIImage? = UIImage(named:name, inBundle:bundle, compatibleWithTraitCollection:nil)
-        return image != nil ? image : UIImage(named: "No Image")
+        return image != nil ? image : UIImage(named:"NoImage", inBundle:bundle, compatibleWithTraitCollection:nil)
     }
 }
