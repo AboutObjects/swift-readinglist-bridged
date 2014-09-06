@@ -1,10 +1,11 @@
-# Swift ReadingList (Bridged to Objective-C Model Classes)
+# Swift Reading List iOS App 
+**Written largely in Swift, with bridged Objective-C model object classes**
 
 Version 1.11 *(built with Xcode 6 Beta 7)*
 
 ## Overview
 An iOS example app written in Swift. Demonstrates the following:
-* Working with Objective-C and Swift classes in the same project.
+* Doing Cocoa touch development in Swift.
 * Building and using an iOS 8 framework to share code and resources.
 * Using bridging headers to bridge between Objective-C and Swift classes.
 
@@ -32,7 +33,7 @@ The project consists of the following Xcode targets:
 
 * **ReadingListModel**
 
- Objective-C classes that model a user's reading list, as well as an object store controller written in Swift that serializes and deserializes object graphs stored in plist format.
+ Objective-C classes that model a reading list containing a list of books and authors, as well as an object store controller written in Swift that serializes and deserializes object graphs stored in plist format.
 
 * **ReadingListModelTests**
 
@@ -41,6 +42,8 @@ The project consists of the following Xcode targets:
 * **ReadingListApp**
 
  Swift subclasses and extensions of UIKit classes. Storyboard-based. Depends on the *ReadingListModel* target.
+ 
+There's also a **ReadingListAppTests** target that's currently unused.
 
 ---
 
