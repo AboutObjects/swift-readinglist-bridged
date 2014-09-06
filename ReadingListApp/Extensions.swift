@@ -20,8 +20,9 @@ extension UIColor
 
 extension UIImage
 {
-    class func imageNamed(name: NSString, inBundle bundle: NSBundle) -> UIImage?
+    class func imageNamed(name: NSString, inBundleForClass bundleClass: AnyClass?) -> UIImage?
     {
+        let bundle = NSBundle(forClass: bundleClass.self)
         let image: UIImage? = UIImage(named:name, inBundle:bundle, compatibleWithTraitCollection:nil)
         return image != nil ? image : UIImage(named: "No Image")
     }

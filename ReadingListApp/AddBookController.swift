@@ -17,11 +17,10 @@ class AddBookController : UITableViewController
 
     var bookToAdd: Book {
         get {
-            return Book(dictionary: NSDictionary(dictionary:
-                ["title": titleField.text, "year": yearField.text,
-                    "author":[
-                        "firstName": firstNameField.text,
-                        "lastName": lastNameField.text]]))
+            return Book(dictionary:["title": titleField.text, "year": yearField.text,
+                "author":[
+                    "firstName": firstNameField.text,
+                    "lastName": lastNameField.text]])
         }
     }
     
@@ -37,10 +36,8 @@ class AddBookController : UITableViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
-        if ((segue.identifier as NSString).isEqualToString("DoneAddingBook")) {
-            if completion != nil {
-                completion!(book: bookToAdd)
-            }
+        if segue.identifier == "DoneAddingBook" {
+            completion?(book: bookToAdd)
         }
     }
 }

@@ -28,16 +28,15 @@ class ViewBookController : UITableViewController
         yearLabel.text = book.year
         firstNameLabel.text = book.author.firstName
         lastNameLabel.text = book.author.lastName
-        authorImageView.image = UIImage.imageNamed(book.author.lastName,
-            inBundle:NSBundle(forClass:Book.self))
+        authorImageView.image = UIImage.imageNamed(book.author.lastName, inBundleForClass:Book.self)
         
         title = titleLabel.text
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
-        var navController = segue.destinationViewController as UINavigationController
-        var controller = navController.topViewController as EditBookController
+        let navController = segue.destinationViewController as UINavigationController
+        let controller = navController.topViewController as EditBookController
         controller.book = book
     }
 }

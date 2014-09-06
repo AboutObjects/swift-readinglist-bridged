@@ -25,7 +25,7 @@ class EditBookController : UITableViewController
         lastNameField.text = book.author.lastName
     }
     
-    func updateBook(Void)
+    func updateBook()
     {
         book.title = titleField.text
         book.year = yearField.text
@@ -35,8 +35,8 @@ class EditBookController : UITableViewController
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
-        if ((segue.identifier as NSString).isEqualToString("DoneEditingBook")) {
-            self.updateBook();
+        if segue.identifier == "DoneEditingBook" {
+            updateBook()
         }
     }
 }

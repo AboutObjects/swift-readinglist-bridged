@@ -9,32 +9,27 @@ import ReadingListModel
 class ReadingListController : UITableViewController
 {
     private let objectStore = ReadingListObjectStore("BooksAndAuthors")
-    private var books: NSMutableArray!
+    private var books = [Book]()
     
     
     // MARK: - Unwind Segues
     
-    @IBAction private func doneEditingBook(segue: UIStoryboardSegue) -> Void
+    @IBAction private func doneEditingBook(segue: UIStoryboardSegue)
     {
         let controller = segue.sourceViewController as EditBookController
-        books.addObject(controller.book)
+        books.append(controller.book)
+        tableView.reloadData()
         save()
-        
-        self.tableView.reloadData()
     }
     
-    @IBAction private func doneAddingBook(segue: UIStoryboardSegue) -> Void
-    {
-        // TODO: Implement me!
-    }
-    
-    @IBAction private func cancelEditingBook(segue: UIStoryboardSegue) -> Void { }
-    @IBAction private func cancelAddingBook(segue: UIStoryboardSegue) -> Void { }
+    @IBAction private func doneAddingBook(segue: UIStoryboardSegue)    { }
+    @IBAction private func cancelEditingBook(segue: UIStoryboardSegue) { }
+    @IBAction private func cancelAddingBook(segue: UIStoryboardSegue)  { }
     
     
     // MARK: - Updating Store
     
-    private func save() -> Void
+    private func save()
     {
         let newReadingList = ReadingList()
         newReadingList.books = books;
@@ -45,7 +40,7 @@ class ReadingListController : UITableViewController
     
     private func insertBook(book: Book, index: Int)
     {
-        books.insertObject(book, atIndex:index)
+        books.insert(book, atIndex:index)
         save()
         
         let indexPath = NSIndexPath(forRow:index, inSection:0)
@@ -61,7 +56,7 @@ class ReadingListController : UITableViewController
         super.viewDidLoad()
         
         var newReadingList = objectStore.readingList()
-        books = (newReadingList.books as NSArray).mutableCopy() as NSMutableArray
+        books = newReadingList.books as [Book]
         
         title = newReadingList.title
         navigationItem.leftBarButtonItem = editButtonItem()
@@ -102,7 +97,7 @@ class ReadingListController : UITableViewController
         forRowAtIndexPath indexPath: NSIndexPath)
     {
         if editingStyle == .Delete {
-            books.removeObjectAtIndex(indexPath.row)
+            books.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation:.Automatic)
             save()
         }
@@ -124,10 +119,9 @@ class ReadingListController : UITableViewController
         
         cell.textLabel!.text = book.title
         cell.detailTextLabel!.text = book.year + "  " + book.author.fullName
-        cell.imageView!.image = UIImage.imageNamed(book.author.lastName,
-            inBundle:NSBundle(forClass: Book.self))
+        cell.imageView!.image = UIImage.imageNamed(book.author.lastName, inBundleForClass:Book.self)
         
-        return cell;
+        return cell
     }
 }
 
