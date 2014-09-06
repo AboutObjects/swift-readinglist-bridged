@@ -1,6 +1,6 @@
 # Swift ReadingList (Bridged to Objective-C Model Classes)
 
-Version 1.1 *(built with Xcode 6 Beta 7)*
+Version 1.11 *(built with Xcode 6 Beta 7)*
 
 ## Overview
 An iOS example app written in Swift. Demonstrates the following:
