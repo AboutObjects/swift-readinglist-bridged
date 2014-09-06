@@ -1,5 +1,5 @@
-# Swift Reading List iOS App 
-**Written largely in Swift, with bridged Objective-C model object classes**
+# Swift Reading List
+**An iOS app written primarily in Swift with bridged Objective-C model object classes.**
 
 Version 1.11 *(built with Xcode 6 Beta 7)*
 
