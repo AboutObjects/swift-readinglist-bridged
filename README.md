@@ -4,12 +4,12 @@
 Version 1.11 *(built with Xcode 6 Beta 7)*
 
 ## Overview
-An iOS example app written in Swift. Demonstrates the following:
-* Doing Cocoa touch development in Swift.
+An example app that demonstrates the following:
+* Using Swift to target Cocoa touch C and Objective-C frameworks.
 * Building and using an iOS 8 framework to share code and resources.
 * Using bridging headers to bridge between Objective-C and Swift classes.
 
-Illustrates the use of the Swift language in the implementation of typical Cocoa touch application code, including the following:
+Illustrates the use of the Swift language in the implementation of fairly typical Cocoa touch application code. Includes use of the following features of Swift:
 
 * Optionals
 * Pattern matching
