@@ -28,7 +28,7 @@ class ReadingListObjectStore : NSObject
         super.init()
     }
     
-    func readingList(Void) -> ReadingList
+    func readingList() -> ReadingList
     {
         var fileURL = fileURLForDocument(storeName, type: "plist")
         
@@ -46,7 +46,7 @@ class ReadingListObjectStore : NSObject
         return ReadingList(dictionary: NSDictionary(contentsOfURL: fileURL))
     }
     
-    func saveReadingList(readingList: ReadingList) -> Void
+    func saveReadingList(readingList: ReadingList)
     {
         let fileURL = fileURLForDocument(storeName, type: "plist")
         let dict: NSDictionary = readingList.dictionaryRepresentation()
