@@ -16,8 +16,6 @@ class ReadingListController : UITableViewController
     
     @IBAction private func doneEditingBook(segue: UIStoryboardSegue)
     {
-        let controller = segue.sourceViewController as EditBookController
-        books.append(controller.book)
         tableView.reloadData()
         save()
     }
