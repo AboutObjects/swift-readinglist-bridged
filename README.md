@@ -1,7 +1,7 @@
 # Swift Reading List
 **An iOS app written primarily in Swift with bridged Objective-C model object classes.**
 
-Version 1.11 *(built with Xcode 6 Beta 7)*
+Version 1.12 *(built with Xcode 6.01)*
 
 ## Overview
 An example app that demonstrates the following:
